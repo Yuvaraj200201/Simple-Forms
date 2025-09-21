@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <center>
+      <div id="container">
+        <div class="btns">
+          <a class="btnReg" href="rgister-form.html">Register</a>
+          <a class="btnMes" href="message.html">Message</a>
+        </div>
+        <h1>STUDENT FORM</h1>
+        <form>
+          <table>
+            <tr>
+              <td>Name</td>
+              <td>
+                <input
+                  type="name"
+                  id="names"
+                  placeholder="Enter your name"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Age</td>
+              <td>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  placeholder="Enter your age"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Gender</td>
+              <td id="gender">
+                <input type="radio" name="gender" id="male" required /> Male
+                <input type="radio" name="gender" id="female" required /> Female
+              </td>
+            </tr>
+
+            <tr>
+              <td>Course</td>
+              <td>
+                <select name="course" id="courses" required>
+                  <option value="">-- Select --</option>
+                  <option>HTML & CSS</option>
+                  <option>Tailwind.CSS</option>
+                  <option>Java Script</option>
+                  <option>React.js</option>
+                  <option>Node.js</option>
+                  <option>Python</option>
+                  <option>Java</option>
+                  <option>C++</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Email</td>
+              <td>
+                <input
+                  type="email"
+                  id="mail"
+                  placeholder="ex:raj@gmail.com"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <button id="saveBtn">Save</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <table
+        border="1"
+        style="margin-top: 5%; background-color: white"
+        id="list"
+      >
+        <tr style="font-weight: bold; background-color: rgb(252, 102, 102)">
+          <td>Name</td>
+          <td>Age</td>
+          <td>Gender</td>
+          <td>Course</td>
+          <td>Email</td>
+          <td>Action</td>
+        </tr>
+      </table>
+    </center>
+    <!-- Java Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

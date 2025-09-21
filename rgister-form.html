@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="register-form.css" />
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="btns">
+          <a class="btnStu" href="index.html">Student Form</a>
+          <a class="btnMes" href="message.html">Message</a>
+        </div>
+        <h1>Register Form</h1>
+        <form>
+          <table>
+            <tr>
+              <td><b>Name</b></td>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Email</b></td>
+              <td>
+                <input
+                  type="email"
+                  id="mail"
+                  placeholder="Enter your email"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Password</b></td>
+              <td>
+                <input
+                  type="password"
+                  id="pwd"
+                  minlength="6"
+                  placeholder="Enter your Password"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <button style="width: 100%; padding: 2px" id="regBtn">
+                  Register
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </center>
+
+    <script>
+      var name = document.getElementById("name");
+      var email = document.getElementById("mail");
+      var password = document.getElementById("pwd");
+      var form = document.querySelector("form");
+      var button = document.getElementById("regBtn");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          alert("Please fill out all fields correctly.");
+        } else {
+          alert("Registration Successful!");
+          form.reset();
+        }
+      });
+    </script>
+  </body>
+</html>

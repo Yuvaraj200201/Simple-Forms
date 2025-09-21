@@ -1,0 +1,97 @@
+body {
+  text-align: center;
+}
+table {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#container {
+  background-color: rgb(252, 102, 102);
+  width: 350px;
+  border-radius: 30px;
+  height: 400px;
+  box-shadow: 10px 10px 10px black;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+.btnReg {
+  background-color: rgb(69, 3, 250);
+  padding: 10px;
+  text-decoration: none;
+  border: solid rgb(12, 12, 12) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+td:first-child {
+  font-weight: bold;
+}
+.btnMes {
+  background-color: rgb(4, 247, 77);
+  padding: 10px;
+  text-decoration: none;
+  border: solid rgb(7, 7, 7) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+#saveBtn {
+  width: 100%;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#names {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#age {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#gender {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#courses {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#mail {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}
+h5 {
+  display: inline;
+  color: red;
+}
+.deleteBtn {
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  border: solid rgb(7, 7, 7) 1px;
+  border-radius: 5px;
+  color: white;
+}

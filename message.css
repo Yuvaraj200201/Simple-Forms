@@ -1,0 +1,71 @@
+#textBox {
+  border-radius: 5px;
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  border: solid black 2px;
+  font-size: 16px;
+}
+.container {
+  padding: 30px;
+  width: fit-content;
+  background-color: lightgreen;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+}
+.charWar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#warning {
+  visibility: hidden;
+  font: optional;
+}
+#charCount {
+  color: white;
+  font-weight: bold;
+}
+#btnSend {
+  width: 100%;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  height: 30px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+.btnStu {
+  background-color: red;
+  padding: 10px;
+  text-decoration: none;
+  border: solid rgb(12, 12, 12) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.btnReg {
+  background-color: blue;
+  padding: 10px;
+  text-decoration: none;
+  border: solid rgb(7, 7, 7) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+#warning.blink {
+  animation: blink 2s linear infinite;
+}

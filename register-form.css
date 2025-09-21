@@ -1,0 +1,56 @@
+.container {
+  border: solid 0.5px black;
+  background-color: rgb(125, 106, 233);
+  padding: 25px;
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+.btnStu {
+  background-color: red;
+  padding: 5px;
+  text-decoration: none;
+  border: solid rgb(12, 12, 12) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.btnMes {
+  background-color: rgb(2, 248, 56);
+  padding: 5px;
+  text-decoration: none;
+  border: solid rgb(7, 7, 7) 1px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+#regBtn {
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 30px;
+  font-weight: bold;
+  color:white
+}
+#name {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}
+#mail {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}
+#pwd {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}

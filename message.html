@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="message.css" />
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="btns">
+          <a class="btnStu" href="index.html">Student Form</a>
+          <a class="btnReg" href="rgister-form.html">Register</a>
+        </div>
+        <h1>Message</h1>
+        <textarea
+          name="text"
+          id="textBox"
+          maxlength="300"
+          placeholder="Enter your message..."
+        ></textarea>
+        <div class="charWar">
+          <p id="charCount"></p>
+          <p id="warning"></p>
+        </div>
+        <button id="btnSend">Send</button>
+      </div>
+    </center>
+
+    <script>
+      var textBox = document.getElementById("textBox");
+      var charCount = document.getElementById("charCount");
+      var warning = document.getElementById("warning");
+
+      textBox.addEventListener("input", function () {
+        var count = textBox.value.length;
+        charCount.textContent = count + "/300";
+        charCount.style.color = count >= 300 ? "red" : "black"; 
+
+        if (count >= 300) {
+          warning.textContent = "Character limit exceeded!";
+          warning.style.color = "red";
+          warning.style.visibility = "visible";
+          warning.classList.add("blink");
+        }
+       else if (count < 300 && count > 0) {
+          warning.textContent = "";
+          warning.style.visibility = "hidden";
+          warning.classList.remove("blink");  
+        }
+      });
+    </script>
+  </body>
+</html>
