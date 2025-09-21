@@ -10,9 +10,9 @@ A basic registration form built using HTML, CSS, and JavaScript. it includes nam
 
 ## Technologies  
 
-- HTML5  
-- CSS3  
-- JavaScript  
+🔴 HTML-59.4%  
+🟣 CSS-32.3%  
+🟡 JavaScript-8.3%  
 
 ## 📂 Folder Structure
 ──────────────────────────────────────────────────────────────────────  
@@ -26,3 +26,5 @@ A basic registration form built using HTML, CSS, and JavaScript. it includes nam
 └── 🎨 style.css  
 ───────────────────────────────────────────────────────────────────────  
 
+[🌐 Live Demo](https://yuvaraj200201.github.io/Simple-Forms/)  
+[👉 GitHub Repo](https://github.com/Yuvaraj200201/Simple-Forms)
