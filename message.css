@@ -1,13 +1,13 @@
 #textBox {
   border-radius: 5px;
-  width: 350px;
+  width: 300px;
   height: 200px;
   padding: 10px;
   border: solid black 2px;
   font-size: 16px;
 }
 .container {
-  padding: 30px;
+  padding: 25px;
   width: fit-content;
   background-color: lightgreen;
   border-radius: 20px;
